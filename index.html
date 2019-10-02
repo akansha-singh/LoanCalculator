@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <title>Loan calculator</title>
+  </head>
+  <script>
+
+.input-group-addon {
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+
+  </script>
+
+
+
+
+
+
+  <body>
+     <div class = "container-float">
+         <div class = "row">
+             <div class = "col-md-6 mx-auto">
+                <div class = "card card-body text-center mt-5" style="border-radius:20px;background-color:#f8f8ff;">
+                    <h1 class = "heading display-5 pb-3">Loan Calculator</h1>
+                    <form id = "loan-form">
+                        <div class = "form-group">
+                            <div class = "input-group">
+                                <span class = "input-group-addon">$ &nbsp &nbsp</span>  <!-- for dollar $ sign -->
+                                <input type = "number" id = "amount" class = "form-control" placeholder = "Loan Amount" class="u-full-width">
+
+                            </div>
+                        </div>
+
+                        <div class = "form-group">
+                            <div class = "input-group">
+                                <span class = "input-group-addon">% &nbsp &nbsp</span>  <!-- for dollar $ sign -->
+                                <input type = "number" id = "interest" placeholder = "Interest" class = "form-control" class="u-full-width">
+
+                            </div>
+                        </div>
+
+                        <div class = "form-group">
+						     <div class = "input-group">
+						    <span class = "input-group-addon">Years &nbsp &nbsp</span>
+                            <input type = "number" id = "years" class = "form-control" placeholder = "Years To Repay"  class="u-full-width">
+                        </div>
+						 </div>
+
+                        <div class = "form-group">
+                           <center> <input type = "submit" class = "btn btn-dark btn-block " value = "Calculate" style="width:220px;background-color:;border-radius:20px;margin-top:25px;"></center>
+                        </div>
+                    </form>
+
+                    <!-- Loader Here -->
+                    <!-- Results -->
+                    <div id = results class = "pt-3">
+                        <h5>Results</h5>
+                        <div class = "form-group">
+                            <div class = "input-group">
+                                <span class = "input-group-addon">Monthly Payment &nbsp &nbsp</span>  <!-- monthly payment -->
+                                <input type = "number" class = "form-control" id = "monthly-payment" disabled>
+                            </div>
+                        </div>
+
+                        <div class = "form-group">
+                            <div class = "input-group">
+                                <span class = "input-group-addon">Total Payment &nbsp &nbsp</span>  <!-- for dollar $ sign -->
+                                <input type = "number" class = "form-control" id = "total-payment" disabled>
+                            </div>
+                        </div>
+
+                        <div class = "form-group">
+                            <div class = "input-group">
+                                <span class = "input-group-addon">Total Interest &nbsp &nbsp</span>  <!-- for dollar $ sign -->
+                                <input type = "number" class = "form-control" id = "total-interest" disabled>
+                            </div>
+                        </div>
+
+                     </div>
+
+                </div>
+             </div>
+         </div>
+     </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS4.js"></script>
+  </body>
+</html>
